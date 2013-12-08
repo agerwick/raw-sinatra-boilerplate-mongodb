@@ -1,0 +1,21 @@
+# HOW TO
+
+# Install:
+# Install rvm - see http://rvm.io
+# move to directory you want it installed in
+git clone ..... .
+cd . # in order to invoke rvm
+gem install bundler
+bundle
+
+# Run application:
+rackup -p 8000
+# Run application, automatically reloading when a file is changed:
+shotgun -p 8000 config.ru
+# access via http://localhost:8000
+
+# Run tests:
+rake  # list specific commands for each type of test
+
+# Run individual test:
+ruby -I test "test/features/welcome_spec.rb"

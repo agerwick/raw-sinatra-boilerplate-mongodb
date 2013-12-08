@@ -1,0 +1,1 @@
+Acceptance testing of features using headless browser

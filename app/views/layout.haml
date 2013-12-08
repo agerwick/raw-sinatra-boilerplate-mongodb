@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %title Boilerplate using Sinatra and Haml, tested with Capybara
+    %link(rel="stylesheet" href="css/styles.css")
+
+  %body
+    #wrapper
+
+      #header
+        %h1 Boilerplate using Sinatra and Haml, tested with Capybara
+        %p This text can be found in app/views/layout.haml
+
+      #menu
+        %ol
+          -menuItem("/", "Index")
+          -menuItem("/hello", "Hello")
+
+      #content
+        =yield
+
+      #sidebar
+        %h1 Sidebar
+        %p
+          This is a sidebar. It's on the side...
+
+      #footer
+        %p
+          This is a footer. It's on the bottom of the page...

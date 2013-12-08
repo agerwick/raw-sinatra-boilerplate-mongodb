@@ -1,0 +1,10 @@
+-if @firstname
+  %h1 Hello #{h @firstname}, my friend!
+-else
+  %h1 Welcome!
+%p
+  Please enter your name here:
+  %form{:method=>"post"}
+    %input{:name=>"firstname", :placeholder=>"Enter your name here", :value=>(@firstname)}
+    %input{:type=>"submit", :value=>"Submit"}
+%p This text can be found in app/views/index.haml
