@@ -25,7 +25,7 @@ describe App do
     end
   end
 
-  it "will clean the input" do
+  it "will clean the input, preventing injection" do
     visit '/'
     @hack_name = "'""><i>Fjodleik</i>"
     within 'div#wrapper div#content form' do

@@ -11,3 +11,10 @@ end
 Dir["app/**/*.rb"].each do |file|
   require_relative file
 end
+
+# Load all helpers
+class App
+  helpers do
+    include AppHelpers
+  end
+end
