@@ -15,3 +15,14 @@ class HtmlEncodingTest < Test
   end
 
 end
+
+describe App do
+  describe "bigger and smaller" do
+    it "should return the biggest element of an array" do
+      [1, -1000, 400, 555, 33, 98].biggest.must_equal 555
+    end
+    it "should return the smallest element of an array" do
+      [1, -1000, 400, 555, 33, 98].smallest.must_equal -1000
+    end
+  end
+end
