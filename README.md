@@ -7,9 +7,9 @@ Boilerplate using Sinatra and Haml, tested with Capybara
 How to install
 --------------
 
-* Install rvm - see http://rvm.io
-* Move to the directory you want it installed in
-* Execute the following
+Install rvm - see http://rvm.io
+Change to the directory you want it installed in
+Execute the following
 
     git clone git@github.com:agerwick/raw-sinatra-boilerplate.git .
     cd .  # in order to invoke rvm
@@ -20,11 +20,11 @@ How to install
 How to run application
 ----------------------
 
-* Running in production mode
+Running in production mode
 
     rackup -p 8000
 
-* Run in development mode, automatically reloading when a file is changed:
+Run in development mode, automatically reloading when a file is changed:
 
     shotgun -p 8000 config.ru
 
