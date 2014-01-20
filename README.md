@@ -8,7 +8,9 @@ How to install
 --------------
 
 Install rvm - see http://rvm.io
+
 Change to the directory you want it installed in
+
 Execute the following
 
     git clone git@github.com:agerwick/raw-sinatra-boilerplate.git .
