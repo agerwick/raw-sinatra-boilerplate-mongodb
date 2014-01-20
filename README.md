@@ -11,12 +11,10 @@ How to install
 * Move to the directory you want it installed in
 * Execute the following
 
-'''sh
-git clone git@github.com:agerwick/raw-sinatra-boilerplate.git .
-cd .  # in order to invoke rvm
-gem install bundler
-bundle
-'''
+    git clone git@github.com:agerwick/raw-sinatra-boilerplate.git .
+    cd .  # in order to invoke rvm
+    gem install bundler
+    bundle
 
 
 How to run application
@@ -24,15 +22,11 @@ How to run application
 
 * Running in production mode
 
-'''sh
-rackup -p 8000
-'''
+    rackup -p 8000
 
 * Run in development mode, automatically reloading when a file is changed:
 
-'''sh
-shotgun -p 8000 config.ru
-'''
+    shotgun -p 8000 config.ru
 
 The application can be accessed at http://localhost:8000
 
@@ -40,9 +34,7 @@ The application can be accessed at http://localhost:8000
 How to run interactive ruby shell (irb)
 ---------------------------------------
 
-'''sh
-irb -r ./i.rb
-'''
+    irb -r ./i.rb
 
 This will also make all helpers available from irb
 
@@ -52,12 +44,8 @@ How to run tests
 
 To list specific commands for each type of test
 
-'''sh
-rake
-'''
+    rake
 
 To run individual test
 
-'''sh
-ruby -I test "test/features/welcome_spec.rb"
-'''
+    ruby -I test "test/features/welcome_spec.rb"
