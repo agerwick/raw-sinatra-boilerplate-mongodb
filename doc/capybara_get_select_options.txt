@@ -1,0 +1,31 @@
+Get the option elements instead of the select element:
+
+Assuming your html is:
+
+<select id="MainContent_dd">
+    <option>Option A</option>
+    <option>Option B</option>
+    <option>Option C</option>
+</select>
+
+Then you can do:
+  periods = find('#MainContent_dd').all('option').collect(&:text)
+  p periods.length
+  #=> 3
+  p periods
+  #=> ["Option A", "Option B", "Option C"]
+
+What this does is:
+find('#MainContent_dd') - Finds the select list that you want to get the options from
+all('option') - Gets all option elements within the select list
+collect(&:text) - Collects the text of each option and returns it as an array
+
+Note:
+The above is slow, better use this:
+periods = page.execute_script("options = document.querySelectorAll('#MainContent_dd > option'); texts=[]; for (i=0; i<options.length; i++) texts.push(options[i].textContent); return texts")
+
+or this (Jquery):
+periods = page.evaluate_script("$('#MainContent_dd').map(function() { return $(this).text() }).get()") 
+
+Source:
+http://stackoverflow.com/questions/15005667/capybara-writing-drop-downs-options-texts-into-an-array/15166724#15166724
