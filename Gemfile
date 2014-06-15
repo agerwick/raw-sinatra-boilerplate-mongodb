@@ -10,4 +10,5 @@ group :test do
   gem "capybara", "~> 2.2"
   gem "capybara-webkit", "~> 1.0"
   gem "capybara_minitest_spec", "~> 1.0"
+  gem 'simplecov', '~> 0.7.1', :require => false
 end
