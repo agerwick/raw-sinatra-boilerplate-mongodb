@@ -1,5 +1,7 @@
 # encoding: utf-8
 require_relative "spec_helper"
+require_relative "sinatra_mock_objects"
+
 
 module TestHelpers
   module ClassMethods
@@ -19,12 +21,23 @@ module TestHelpers
   end
 end
 
-class Test < MiniTest::Unit::TestCase
-  include Rack::Test::Methods
-  include TestHelpers   # see above
-  include AppHelpers    # make it possible to test helpers
 
-  def App
-    Namespace::App   # or Sinatra::Application
-  end
+
+# anything within this class will be made available to all tests
+class Test < MiniTest::Spec # MiniTest::Unit::TestCase
+  include TestHelpers   # see above
+  include AppHelpers           # make it possible to test helpers
+  include SinatraMockObjects   # mock objects used by helpers, etc.
 end
+
+# the following makes the Test class above the parent of all tests, so they will inherit from it
+MiniTest::Spec.register_spec_type(/.*/, Test)
+
+# define Sinatra Application Namespace to run unit tests from within
+def App
+  Namespace::App   # or Sinatra::Application
+end
+
+#def app
+#  App.new
+#end
