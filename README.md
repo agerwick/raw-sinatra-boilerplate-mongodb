@@ -1,7 +1,7 @@
 raw-sinatra-boilerplate
 =======================
 
-Boilerplate using Sinatra and Haml, tested with Capybara
+Boilerplate using Sinatra and Haml, tested with Minitest and Capybara
 
 
 How to install

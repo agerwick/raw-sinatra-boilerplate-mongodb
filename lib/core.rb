@@ -19,21 +19,14 @@ class Array
   end
 end
 
-
-#2.0.0p353 :056 > class Class # or FixNum, or ideally all numbers and strings
-#2.0.0p353 :057?>   def bigger (a)
-#2.0.0p353 :058?>     return self if self > a
-#2.0.0p353 :059?>     return a
-#2.0.0p353 :060?>     end
-#2.0.0p353 :061?>   end
-
-#2.0.0p353 :056 > class Class
-#2.0.0p353 :057?>   def bigger (a)
-#2.0.0p353 :058?>     return self if self > a
-#2.0.0p353 :059?>     return a
-#2.0.0p353 :060?>     end
-#2.0.0p353 :061?>   end
-# => nil
-#2.0.0p353 :062 > ["a", "1", "S", "x"].reduce(:bigger)
-# => "x"
-
+class String
+  def for_css
+    # replaces any number of sequential non-alphanumeric characters and spaces to exactly one dash and makes sure the start and end of the string is an alphanumeric character.
+    # This is meant for converting human readable text to css id or class tags.
+    self.downcase.gsub(/[\W_]+/,'-').chomp("-").reverse.chomp("-").reverse
+  end
+  def for_css!
+    replace(for_css)
+  end
+end
+# ok, fine, this may not be a brilliant example of business logic, as it's mostly about implementation, but there are limits to exactly how much "business logic" you can invent for a completely generic boilerplace...

@@ -1,0 +1,3 @@
+Helpers for route handlers and templates.
+These are considered implementation details and will thus not have unit tests.
+Their functionality can be tested by requesting a page it's used in and checking the content.

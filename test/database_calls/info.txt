@@ -1,0 +1,5 @@
+Unit testing of database calls. They were separated from business logic unit
+test so that they can be run separately.
+Because the business logic tests are very fast to run, you can run them more
+often if what you're changing doesn't involve database calls.
+

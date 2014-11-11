@@ -1,0 +1,3 @@
+Acceptance testing of features using headless browser, including the ability to "click" on the page.
+Capybara syntax: see doc/capybara_cheat_sheet
+

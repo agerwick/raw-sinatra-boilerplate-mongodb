@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/brandonweiss/rack-minitest.git
+  revision: 58cdbac8a01b811e1239df45b00f619012390028
+  specs:
+    rack-minitest (0.0.9)
+      json
+      minitest (~> 5.0)
+      rack-test
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -18,7 +27,7 @@ GEM
     json (1.7.7)
     mime-types (2.0)
     mini_portile (0.5.2)
-    minitest (4.3.2)
+    minitest (5.4.2)
     multi_json (1.10.1)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
@@ -49,7 +58,8 @@ DEPENDENCIES
   capybara-webkit (~> 1.0)
   capybara_minitest_spec (~> 1.0)
   haml (~> 4.0)
-  minitest (~> 4.3)
+  minitest (~> 5.0)
+  rack-minitest!
   rack-test (~> 0.6)
   shotgun
   simplecov (~> 0.7.1)

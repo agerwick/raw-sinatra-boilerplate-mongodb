@@ -1,1 +1,3 @@
-Acceptance testing of API calls / JSON requests
+Acceptance testing of HTTP requests / API calls / JSON requests using Rack::Test
+This is separate from accpetance tests with Capybara and headless Webkit because
+they don't need a headless browser. This should make them a bit faster.
