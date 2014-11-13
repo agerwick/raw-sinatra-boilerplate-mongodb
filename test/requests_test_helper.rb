@@ -4,11 +4,6 @@ require_relative "./business_logic_test_helper.rb"
 require 'rack/test'
 require 'rack-minitest/test'
 
-# define Sinatra Application Namespace to run unit tests from within
-def App
-  Namespace::App   # or Sinatra::Application
-end
-
 # needed by Rack::Test so the mock request methods send requests to App object
 def app
   App
