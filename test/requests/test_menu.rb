@@ -28,29 +28,4 @@ describe App do
     end
   end
 
-
-#   describe "html encoding" do
-#     it "should encode html tags" do
-#       escape_html("<>").must_equal "&lt;&gt;"
-#     end
-#     it "should encode quotes" do
-#       h("The \"simple\" 'solution'").must_equal "The &quot;simple&quot; &#x27;solution&#x27;"
-#     end
-#   end
-#
-#   describe "url encoding" do
-#     it "should encode spaces" do
-#       escape_path("test?something=nothing&something else=<blah>").must_equal "test%3Fsomething%3Dnothing%26something%20else%3D%3Cblah%3E"
-#     end
-#   end
-#
-#   describe "menu items the way that works but which I find ugly" do
-#     it "should return correct html for the root menu item III" do
-#       @helper = Struct.new(:request).new
-#       @helper.request = MiniTest::Mock.new
-#       @helper.request.expect :path, '/'
-#       @helper.menuItem('/', 'home').must_equal ""
-#     end
-#   end
-
 end
