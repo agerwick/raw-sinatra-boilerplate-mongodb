@@ -4,7 +4,8 @@ module AppHelpers
   end
   alias h escape_html
 
-  def escape_path(text)  # for uri paths
-    Rack::Utils.escape_path(text)
-  end
+# commented out as it's not (yet) in use
+#   def escape_path(text)  # for uri paths
+#     Rack::Utils.escape_path(text)
+#   end
 end
