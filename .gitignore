@@ -2,3 +2,4 @@
 coverage
 *.save
 tmp
+.ruby-gemset
