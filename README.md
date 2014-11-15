@@ -24,7 +24,7 @@ How to run application
 
 Running in production mode
 
-    rackup -p 8000
+    rackup -p 8000 -E production
 
 Run in development mode, automatically reloading when a file is changed:
 
