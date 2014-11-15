@@ -1,5 +1,6 @@
-raw-sinatra-boilerplate
+raw-sinatra-boilerplate [![Build Status](https://travis-ci.org/agerwick/raw-sinatra-boilerplate.svg?branch=master)](https://travis-ci.org/agerwick/raw-sinatra-boilerplate) [![Dependency Status](https://gemnasium.com/agerwick/raw-sinatra-boilerplate.svg)](https://gemnasium.com/agerwick/raw-sinatra-boilerplate)
 =======================
+
 
 Boilerplate using Sinatra and Haml, tested with Minitest and Capybara
 
