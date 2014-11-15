@@ -1,10 +1,12 @@
 require 'sinatra/base'
 require 'haml'
+require 'mongoid'
 
 class App < Sinatra::Base
   set :sessions, true
   set :logging, true if settings.environment != :test
   set :views, "app/views"
+  Mongoid.load!("mongoid.yml") if settings.environment != :test
 end
 
 # Load all application files.
