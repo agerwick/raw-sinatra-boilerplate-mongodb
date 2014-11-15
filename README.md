@@ -1,8 +1,8 @@
-raw-sinatra-boilerplate [![Build Status](https://travis-ci.org/agerwick/raw-sinatra-boilerplate.svg?branch=master)](https://travis-ci.org/agerwick/raw-sinatra-boilerplate) [![Dependency Status](https://gemnasium.com/agerwick/raw-sinatra-boilerplate.svg)](https://gemnasium.com/agerwick/raw-sinatra-boilerplate)
+raw-sinatra-boilerplate-mongodb [![Build Status](https://travis-ci.org/agerwick/raw-sinatra-boilerplate-mongodb.svg?branch=master)](https://travis-ci.org/agerwick/raw-sinatra-boilerplate-mongodb) [![Dependency Status](https://gemnasium.com/agerwick/raw-sinatra-boilerplate-mongodb.svg)](https://gemnasium.com/agerwick/raw-sinatra-boilerplate-mongodb)
 =======================
 
 
-Boilerplate using Sinatra and Haml, tested with Minitest and Capybara
+Boilerplate using Sinatra, Haml, and Mongoid, tested with Minitest and Capybara
 
 
 How to install
