@@ -3,3 +3,8 @@ coverage
 *.save
 tmp
 .ruby-gemset
+db/production/*
+db/development/*
+db/test/*
+log
+
