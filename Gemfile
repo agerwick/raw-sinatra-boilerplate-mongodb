@@ -12,4 +12,5 @@ group :test do
   gem "capybara-webkit", "~> 1.0"
   gem "capybara_minitest_spec", "~> 1.0"
   gem "simplecov", "~> 0.7.1", :require => false
+  gem "travis-lint"
 end
