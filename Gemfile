@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
  
-gem "sinatra", "~> 1.4.4"
+gem "sinatra", "~> 1.4"
 gem "shotgun"
 gem "haml", "~> 4.0"
  
@@ -11,6 +11,6 @@ group :test do
   gem "capybara", "~> 2.2"
   gem "capybara-webkit", "~> 1.0"
   gem "capybara_minitest_spec", "~> 1.0"
-  gem "simplecov", "~> 0.7.1", :require => false
+  gem "simplecov", :require => false
   gem "travis-lint"
 end
