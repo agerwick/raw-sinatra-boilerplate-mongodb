@@ -13,4 +13,5 @@ group :test do
   gem "capybara_minitest_spec", "~> 1.0"
   gem "simplecov", :require => false
   gem "travis-lint"
+  gem "codeclimate-test-reporter", require: nil
 end
