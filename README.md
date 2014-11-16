@@ -55,3 +55,10 @@ To list specific commands for each type of test
 To run individual test
 
     ruby -I test "test/features/welcome_spec.rb"
+
+
+Continuous Integration
+----------------------
+CI is taken care of by Travis CI.
+If you wish to ship CI on a minor commit (such as changes to the readme file), add [skip ci] to the commit message
+
