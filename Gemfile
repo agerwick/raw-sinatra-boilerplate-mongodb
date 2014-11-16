@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
- 
+
+gem "codeclimate-test-reporter", group: :test, require: nil 
 gem "sinatra", "~> 1.4"
 gem "shotgun"
 gem "haml", "~> 4.0"
@@ -13,5 +14,4 @@ group :test do
   gem "capybara_minitest_spec", "~> 1.0"
   gem "simplecov", :require => false
   gem "travis-lint"
-  gem "codeclimate-test-reporter", require: nil
 end
