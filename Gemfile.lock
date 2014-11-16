@@ -22,6 +22,8 @@ GEM
     capybara_minitest_spec (1.0.5)
       capybara (>= 2)
       minitest (>= 4)
+    codeclimate-test-reporter (0.4.1)
+      simplecov (>= 0.7.1, < 1.0.0)
     docile (1.1.5)
     haml (4.0.5)
       tilt
@@ -61,6 +63,7 @@ DEPENDENCIES
   capybara (~> 2.2)
   capybara-webkit (~> 1.0)
   capybara_minitest_spec (~> 1.0)
+  codeclimate-test-reporter
   haml (~> 4.0)
   minitest (~> 5.0)
   rack-minitest!
