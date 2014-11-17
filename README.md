@@ -56,6 +56,10 @@ To run individual test
 
     ruby -I test "test/features/welcome_spec.rb"
 
+To run irb in the test environment
+
+    RACK_ENV="test" irb -r./i.rb
+
 
 Continuous Integration
 ----------------------
