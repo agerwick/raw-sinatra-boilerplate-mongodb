@@ -18,4 +18,5 @@ group :test do
   gem "mongoid", "~> 4.0.0", :require => false
   gem "simplecov", :require => false
   gem "travis-lint"
+  gem "launchy"
 end

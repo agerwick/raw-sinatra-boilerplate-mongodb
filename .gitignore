@@ -7,4 +7,4 @@ db/production/*
 db/development/*
 db/test/*
 log
-
+capybara-*.html

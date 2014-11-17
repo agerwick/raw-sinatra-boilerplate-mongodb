@@ -1,0 +1,24 @@
+%h1 Notes
+
+%p
+  %form#new{:method=>"post"}
+    %p
+      Enter new note here:
+      %input{:name=>"content"}
+    %input{:type=>"submit", :value=>"Save"}
+
+%h2 Existing notes:
+%p
+  %ul.notes
+    - Note.all.each do |note|
+      %li.note{:id=>"note#{note._id}"}
+        =note.to_s
+        (
+        %a.delete{:id=>"delete#{note._id}-link", :href=>"#",  :onClick=>"document.getElementById('delete#{note._id}').submit();"} delete
+        )
+        %form{:id=>"delete#{note._id}", :method=>"post", :action=>"/note/#{note._id}"}
+          %input{:type=>"hidden", :name=>"_method", :value=>"delete"}
+          %input{:type=>"hidden", :name=>"note_id", :value=>note._id}
+
+
+%p This text can be found in app/views/notes.haml
