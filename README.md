@@ -58,7 +58,7 @@ To run individual test
 
 To run irb in the test environment
 
-    RACK_ENV="test" irb -r./i.rb
+    irb -r./test.i.rb
 
 
 Continuous Integration
