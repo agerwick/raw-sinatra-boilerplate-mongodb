@@ -68,5 +68,6 @@ To run irb in the test environment
 Continuous Integration
 ----------------------
 CI is taken care of by Travis CI.
-If you wish to ship CI on a minor commit (such as changes to the readme file), add [skip ci] to the commit message
+
+If you wish to skip CI on a minor commit (such as changes to the readme file), add [skip ci] to the commit message.
 
