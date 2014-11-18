@@ -4,6 +4,7 @@ gem "codeclimate-test-reporter", group: :test, require: nil
 gem "sinatra", "~> 1.4"
 gem "shotgun"
 gem "haml", "~> 4.0"
+gem "rake"
  
 group :test do
   gem "minitest", "~> 5.0"

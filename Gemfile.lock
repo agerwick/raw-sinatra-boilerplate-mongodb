@@ -39,6 +39,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (0.9.6)
     shotgun (0.9)
       rack (>= 1.0)
     simplecov (0.9.1)
@@ -68,6 +69,7 @@ DEPENDENCIES
   minitest (~> 5.0)
   rack-minitest!
   rack-test (~> 0.6)
+  rake
   shotgun
   simplecov
   sinatra (~> 1.4)
