@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
+gem "codeclimate-test-reporter", group: :test, require: nil 
 gem "sinatra", "~> 1.4"
 gem "shotgun"
 gem "haml", "~> 4.0"
+gem "rake"
 
 group :development, :production do
   gem "mongoid", "~> 4.0.0"
 end
-
-
+ 
 group :test do
   gem "minitest", "~> 5.0"
   gem "rack-test", "~> 0.6"

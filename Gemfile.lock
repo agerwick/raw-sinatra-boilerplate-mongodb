@@ -10,10 +10,10 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (4.1.7)
-      activesupport (= 4.1.7)
+    activemodel (4.1.8)
+      activesupport (= 4.1.8)
       builder (~> 3.1)
-    activesupport (4.1.7)
+    activesupport (4.1.8)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -34,7 +34,9 @@ GEM
     capybara_minitest_spec (1.0.5)
       capybara (>= 2)
       minitest (>= 4)
-    connection_pool (2.0.0)
+    codeclimate-test-reporter (0.4.1)
+      simplecov (>= 0.7.1, < 1.0.0)
+    connection_pool (2.1.0)
     docile (1.1.5)
     haml (4.0.5)
       tilt
@@ -64,6 +66,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.3.2)
     shotgun (0.9)
       rack (>= 1.0)
     simplecov (0.9.1)
@@ -91,12 +94,14 @@ DEPENDENCIES
   capybara (~> 2.2)
   capybara-webkit (~> 1.0)
   capybara_minitest_spec (~> 1.0)
+  codeclimate-test-reporter
   haml (~> 4.0)
   launchy
   minitest (~> 5.0)
   mongoid (~> 4.0.0)
   rack-minitest!
   rack-test (~> 0.6)
+  rake
   shotgun
   simplecov
   sinatra (~> 1.4)

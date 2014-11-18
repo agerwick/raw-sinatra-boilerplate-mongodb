@@ -1,9 +1,12 @@
 language: ruby
 rvm:
   - "2.0.0"
-script: rake all
+script: bundle exec rake all
 before_install:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
 services:
   - mongodb
+addons:
+  code_climate:
+    repo_token: 641eac1c9f54b2ff6242ea5717cb3aa147d7f231914ddbb11182da21e8168346

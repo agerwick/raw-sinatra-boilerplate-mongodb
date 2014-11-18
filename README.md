@@ -1,5 +1,12 @@
-raw-sinatra-boilerplate-mongodb [![Build Status](https://travis-ci.org/agerwick/raw-sinatra-boilerplate-mongodb.svg?branch=master)](https://travis-ci.org/agerwick/raw-sinatra-boilerplate-mongodb) [![Dependency Status](https://gemnasium.com/agerwick/raw-sinatra-boilerplate-mongodb.svg)](https://gemnasium.com/agerwick/raw-sinatra-boilerplate-mongodb)
+raw-sinatra-boilerplate-mongodb
 =======================
+
+
+[![Build Status](https://travis-ci.org/agerwick/raw-sinatra-boilerplate-mongodb.svg?branch=master)](https://travis-ci.org/agerwick/raw-sinatra-boilerplate-mongodb)
+[![Dependency Status](https://gemnasium.com/agerwick/raw-sinatra-boilerplate-mongodb.svg)](https://gemnasium.com/agerwick/raw-sinatra-boilerplate-mongodb)
+[![Code Climate](https://codeclimate.com/github/agerwick/raw-sinatra-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/agerwick/raw-
+sinatra-boilerplate-mongodb)
+[![Test Coverage](https://codeclimate.com/github/agerwick/raw-sinatra-boilerplate/badges/coverage.svg)](https://codeclimate.com/github/agerwick/raw-sinatra-boilerplate-mongodb)
 
 
 Boilerplate using Sinatra, Haml, and Mongoid, tested with Minitest and Capybara
@@ -52,3 +59,14 @@ To list specific commands for each type of test
 To run individual test
 
     ruby -I test "test/features/welcome_spec.rb"
+
+To run irb in the test environment
+
+    irb -r./test.i.rb
+
+
+Continuous Integration
+----------------------
+CI is taken care of by Travis CI.
+If you wish to ship CI on a minor commit (such as changes to the readme file), add [skip ci] to the commit message
+
