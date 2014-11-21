@@ -24,6 +24,7 @@ a:hover{
 #content{
   margin: 10px 0;
   float: left;
+  width: 700px;
 }
 
 #menu ol{
