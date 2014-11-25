@@ -23,7 +23,10 @@ Execute the following
     git clone git@github.com:agerwick/raw-sinatra-boilerplate.git .
     cd .  # in order to invoke rvm
     gem install bundler
-    bundle
+    # for development:
+    bundle install
+    # for production:
+    bundle install --deployment --without=test
 
 
 How to run application
