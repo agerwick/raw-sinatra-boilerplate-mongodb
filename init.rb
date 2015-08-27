@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'haml'
+require 'tilt/haml'
 
 class App < Sinatra::Base
   set :sessions, true
