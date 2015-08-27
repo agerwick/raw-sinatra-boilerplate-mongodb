@@ -8,3 +8,5 @@ before_install:
 addons:
   code_climate:
     repo_token: 7621e981cace82896b9e32411111c62e2eab7fba1c7794d615916aaa9055f276
+cache: bundler
+sudo: false
