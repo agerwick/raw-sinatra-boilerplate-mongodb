@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'haml'
 require 'mongoid'
+require 'tilt/haml'
 
 class App < Sinatra::Base
   set :method_override, true  # enable put/delete http method via post and the "_method" field

@@ -10,3 +10,5 @@ services:
 addons:
   code_climate:
     repo_token: 641eac1c9f54b2ff6242ea5717cb3aa147d7f231914ddbb11182da21e8168346
+cache: bundler
+sudo: false

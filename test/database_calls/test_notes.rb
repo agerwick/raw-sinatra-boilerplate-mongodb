@@ -3,7 +3,7 @@ require_relative "../database_calls_test_helper"
 describe App do
 
   describe "notes database" do
-    it "should be a mongoig object" do
+    it "should be a mongoid object" do
       Note.all.class.must_equal Mongoid::Criteria
     end
   end

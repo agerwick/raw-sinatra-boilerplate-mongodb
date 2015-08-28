@@ -30,3 +30,14 @@ class String
   end
 end
 # ok, fine, this may not be a brilliant example of business logic, as it's mostly about implementation, but there are limits to exactly how much "business logic" you can invent for a completely generic boilerplace...
+
+class Object
+  def to_boolean
+    value = self
+    value = value.downcase if value.respond_to? :downcase  # "True", "true", "TRUE" or "trUe" are all true
+    value = 1 if (value.class.ancestors.include? Numeric) && value > 0  # all positive number -> true
+    value = 1 if (value.class.ancestors.include?(Hash) || value.class.ancestors.include?(Array)) && not(value.empty?)  # any content in array or hash -> true
+    [true, 'true', 'yes', '1', 1].include? value
+  end
+end
+

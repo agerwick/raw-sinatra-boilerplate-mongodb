@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require_relative "./business_logic_test_helper.rb"
+require_relative "./database_calls_test_helper.rb"
 
 require 'rack/test'
 require 'rack-minitest/test'
